@@ -1,6 +1,6 @@
 # Дипломная работа к профессии frontend-разработчик (Система бронирования ЖД билетов)
 
-[GitHub Pages](https://dedmaier.github.io/fe-dev-diploma)
+[GitHub Pages](https://dedmaier.github.io/fe-diplom/)
 
 ## Описание проекта
 
