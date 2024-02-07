@@ -1,0 +1,163 @@
+@import 'styles/variables'
+@import 'styles/mixins'
+
+$color-typo-primary: $grey-light-2
+$color-typo-secondary: $white
+
+$color-bg-primary: $grey-dark-2
+$color-bg-input: $white
+$color-bg-btn-hover: $orange-pale-3
+$color-bg-social-hover: $orange-pale-3
+
+$color-border-primary: $grey-light-2
+
+.footer
+  background-color: $color-bg-primary
+  color: $color-typo-primary
+  @include from(laptop)
+    white-space: pre-wrap
+
+  &__contacts
+    max-width: 1320px
+    margin: 0 auto
+    padding: 50px
+
+    @include media(mobile)
+      padding: 15px
+      padding-block: 30px
+
+    @include media(tablet)
+      padding: 30px
+
+    @include from(laptop)
+      display: flex
+      gap: 20px
+
+  &__contacts > div
+    @include from(laptop)
+      width: 50%
+
+  &__header
+    color: $color-typo-secondary
+    margin-bottom: 25px
+
+  &__button.footer__button
+    width: auto
+    border-radius: 3px
+    text-transform: uppercase
+
+.subscription__text
+  margin-bottom: 15px
+
+  font-size: 1.5rem
+
+  color: $color-typo-primary
+
+.contacts
+  @include to(tablet)
+    margin-bottom: 44px
+
+.contacts__item
+  display: flex
+
+  &:not(:last-child)
+    margin-bottom: 30px
+
+.contact__icon
+  &_wrapper
+    display: flex
+    justify-content: center
+
+    width: 30px
+    height: 30px
+    margin-right: 35px
+
+  &_content
+    width: 30px
+    height: 30px
+    fill: #e5e5e5
+
+.contact__text
+  font-size: 1.5rem
+
+.subscription__form_container
+  margin-bottom: 44px
+
+.subscription__form
+  display: flex
+  gap: 32px
+  width: 100%
+
+  @include to(laptop)
+    flex-direction: column
+    align-items: flex-start
+    gap: 20px
+
+.socials
+  &__list
+    display: flex
+
+  &__item
+    cursor: pointer
+
+    &:hover svg
+      fill: $color-bg-social-hover
+
+    &:not(:last-child)
+      margin-right: 48px
+
+      @include media(mobile)
+        margin-right: 22px
+
+      @include media(tablet, laptop)
+        margin-right: 40px
+
+.social__icon
+  transition: .25s
+  fill: $color-typo-primary
+
+.footer__logo_section
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  max-width: 1500px
+  margin-inline: auto
+  padding-block: 22px 33px
+
+  @include media(mobile)
+    padding-inline: 15px
+
+  @include from(tablet)
+    padding-inline: 50px
+
+  &_wrapper
+    border-top: 1px solid $color-border-primary
+
+.button_scroll-up
+  display: flex
+  justify-content: center
+  align-items: center
+
+  width: 36px
+  height: 36px
+
+  border: 1px solid $color-typo-primary
+  border-radius: 50%
+
+  transition: 0.25s
+  outline: none
+
+  path
+    transition: 0.25s
+
+  &:hover
+    border-color: #FFCA62
+
+    path
+      fill: #FFCA62
+
+.footer__copyright
+  font-size: 1.5rem
+  font-weight: 300
+  color: $color-typo-primary

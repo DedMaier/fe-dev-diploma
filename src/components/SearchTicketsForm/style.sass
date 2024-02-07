@@ -1,0 +1,98 @@
+@import 'styles/variables'
+
+.tickets__form
+  background-color: rgba(41, 41, 41, 0.69)
+
+.form__square
+  max-width: 720px
+  padding: 80px 20px 50px
+  flex-shrink: 0
+
+  .tickets__form_block:not(:last-of-type)
+    margin-bottom: 60px
+
+  .tickets__form_inputs_container
+    margin-bottom: 90px
+
+.form__flex
+  max-width: 1490px
+  margin-top: 110px
+  margin-inline: auto
+  padding: 30px 45px 75px
+
+  .tickets__form_inputs_container
+    display: flex
+    gap: 35px
+
+    margin-bottom: 45px
+
+    .tickets__form_block
+      flex: 1
+
+h4.tickets__form_header
+  margin-bottom: 15px
+  font-weight: 300
+  font-size: 30px
+  line-height: 35px
+  color: #FFFFFF
+
+.tickets__form_inputs_group
+  position: relative
+  display: flex
+  align-items: center
+  gap: 40px
+
+.city-select__container
+  position: relative
+  width: 100%
+
+.city-select__list
+  position: absolute
+  left: 0
+  right: 0
+  z-index: 10
+
+  margin-top: 5px
+  padding: 15px 20px
+
+  background: #F5F4F6
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  border-radius: 3px
+
+.city-select__no-items
+  font-size: 1.125rem
+  color: #292929
+
+.city-select__item
+
+  &:not(:last-child)
+    margin-bottom: 5px
+
+  &_button
+    font-size: 18px
+    color: #292929
+    text-transform: uppercase
+    cursor: pointer
+    display: block
+
+.form__button_inverse
+  position: absolute
+  left: calc(50% - 20px)
+
+  width: 40px
+  height: 24px
+
+  svg
+    width: 24px
+    height: 24px
+
+button.tickets__form_button_submit
+  display: block
+  max-width: 320px
+  margin-left: auto
+
+  text-transform: uppercase
+  color: #292929
+
+.form__input_city-select
+  text-transform: capitalize

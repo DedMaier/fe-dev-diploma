@@ -1,0 +1,197 @@
+.passenger-form__button_expand
+  display: flex
+  justify-content: center
+  align-items: center
+
+  width: 32px
+  height: 32px
+  border: 2px solid #FFA800
+  border-radius: 50%
+  margin-right: 15px
+
+  transition: .1s linear
+
+  &:hover, &.expanded:hover
+    border-color: transparent
+
+  &_icon
+    width: 18px
+
+    .icon
+      fill: #FFA800
+
+  &.expanded
+    border-color: #928F94
+
+    .icon
+      stroke: #928F94
+
+.passenger-form__button_remove
+  margin-left: auto
+
+  &_icon
+    width: 12px
+
+    .icon
+      fill: #928F94
+
+.passenger-form__button_add
+  margin-left: auto
+  transition: .2s linear
+
+  &:hover
+    transform: scale(1.2)
+
+  &_icon
+    width: 18px
+    height: 18px
+
+    .icon
+      fill: #FFA800
+
+.passenger-form__header_content
+  display: flex
+  align-items: center
+
+.form__footer
+  &.valid
+    background: #B2F6A1
+
+  &.invalid
+    background: rgba(255, 61, 0, 0.38)
+
+  &_content
+    display: flex
+    align-items: flex-start
+
+    .form__button
+      margin-left: auto
+
+  &_validation-info
+    display: flex
+    align-items: center
+    gap: 15px
+
+    &_text
+      margin-left: 10px
+      font-size: 18px
+      color: #FFFFFF
+
+    &_icon
+      display: flex
+      flex-shrink: 0
+
+      width: 32px
+      height: 32px
+      padding: 10px
+
+      border-radius: 50%
+
+      &.valid
+        background: #F9FEF7
+
+        .icon
+          fill: #B2F6A1
+
+      &.invalid
+        background: #fff1ed
+
+        .icon
+          fill: #ffb59e
+
+.form__footer_error-message:not(:last-child)
+  margin-bottom: 5px
+
+.passenger-form__fieldset
+  max-width: 200px
+
+.passenger-form__radio
+  &_container
+    display: flex
+    max-width: 200px
+
+  &_label
+    display: block
+    flex-basis: 50%
+    height: 50px
+    cursor: pointer
+
+  &_input
+    position: absolute
+    width: 0
+    height: 0
+
+  &_text
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100%
+    font-weight: 900
+    font-size: 30px
+    line-height: 35px
+    text-transform: uppercase
+    color: #000000
+    border: 1px solid #928F94
+    user-select: none
+
+    input:checked + &
+      background: #FFA800
+
+.passenger-form__radio_label:first-child .passenger-form__radio_text
+  border-top-left-radius: 5px
+  border-bottom-left-radius: 5px
+  border-right: none
+
+.passenger-form__radio_label:last-child .passenger-form__radio_text
+  border-top-right-radius: 5px
+  border-bottom-right-radius: 5px
+
+.document-type
+  width: auto
+
+.passenger-form__select
+  width: 280px
+  flex-shrink: 0
+
+  .select__button
+    background: white
+    padding-inline: 15px
+    border: 1px solid #928F94
+    border-radius: 5px
+    // height: 50px
+    min-height: 50px
+    font-size: 24px
+
+    &::after
+      position: absolute
+      right: 22px
+      top: calc(50% - 2px)
+      content: ""
+      border-top: 4px solid #928F94
+      border-inline: 6px solid transparent
+
+  .select__options
+    border-radius: 5px
+
+    &.show
+      filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.2))
+      background: #F4F3F6
+
+  .select__options_item
+    padding-inline: 15px
+    // height: 50px
+    min-height: 50px
+    display: flex
+    align-items: center
+    font-size: 24px
+    color: #292929
+    border: 1px solid transparent
+
+    &:first-child
+      border-radius: 5px 5px 0 0
+
+    &:last-child
+      border-radius: 0 0 5px 5px
+
+.width-auto
+  width: auto

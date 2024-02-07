@@ -1,0 +1,77 @@
+@import 'styles/variables'
+
+$color-bg-input: $white
+
+.input__container
+  display: flex
+  align-items: stretch
+
+  width: 100%
+  border-radius: 3px
+  background: $color-bg-input
+
+  &_size_l
+    height: 60px
+
+    .form__input
+      padding-inline: 20px
+
+  &_size_s
+    height: 43px
+
+    .form__input
+      padding-inline: 8px
+      font-size: 1.125rem
+
+.form__input
+  width: 100%
+  padding-block: 0
+  border: none
+  outline: none
+
+  font-size: 1.3rem
+  background: transparent
+  position: relative
+
+  &[type="date"][value=""]
+    text-transform: uppercase
+
+    &:not(:focus)::before
+      content: "ДД/ММ/ГГГГ"
+      position: absolute
+      top: 0
+      bottom: 0
+      width: 100%
+      display: flex
+      align-items: center
+      background: white
+      color: #E5E5E5
+      pointer-events: none
+
+  &::placeholder
+    color: #E5E5E5
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator
+  display: none
+  // -webkit-appearance: none
+  // appearance: none
+
+.input__btn
+  display: block
+
+  height: 100%
+  padding: 0
+  padding-right: 20px
+
+  &_icon
+    display: block
+    height: 50%
+    fill: #E5E5E5
+
+.date-input__wrapper
+  width: 100%
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center

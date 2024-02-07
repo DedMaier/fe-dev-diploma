@@ -1,0 +1,46 @@
+@import 'styles/mixins'
+
+.logo
+  font-weight: 900
+  font-size: 36px
+  line-height: 42px
+
+  color: #e5e5e5
+  user-select: none
+
+  &__wrapper
+    background-color: rgba(0, 0, 0, 0.6)
+
+  &__container
+    @include section-width
+    display: flex
+    padding-block: 15px
+
+  &__link
+    display: flex
+
+.menu-links
+  background-color: #292929
+
+  &__list
+    display: flex
+    flex-wrap: wrap
+    gap: 80px
+
+    @include section-width
+
+  &__item
+    font-weight: 300
+    font-size: 30px
+    line-height: 35px
+
+    cursor: pointer
+
+    &:hover .menu-link
+      color: #FFCA62
+
+.menu-link
+  display: block
+  padding: 25px 5px
+  color: #ffffff
+  transition: 0.25s

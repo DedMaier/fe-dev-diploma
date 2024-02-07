@@ -1,0 +1,95 @@
+@import 'styles/variables'
+
+.order__input_container
+  width: 100%
+
+.order__input
+  display: block
+  padding-inline: 15px
+  height: 50px
+  box-sizing: border-box
+  background: #FFFFFF
+  border: 1px solid #928F94
+  border-radius: 5px
+  max-width: 360px
+  width: 100%
+  font-size: 1.5rem
+  color: #292929
+
+  &_size_s
+    max-width: 240px
+
+  // &:focus, &:active
+  //   border-color: #FFA800
+  &::placeholder
+    color: #C4C4C4
+
+  &.invalid
+    border-color: #ff6c3d
+    color: #ff6433
+
+    &::placeholder
+      color: #ff6c3d
+      opacity: 0.5
+
+  &_label
+    display: block
+    font-size: 1rem
+    color: #292929
+    margin-bottom: 12px
+
+.letter-spacing
+  letter-spacing: 0.25em
+  &::placeholder
+    letter-spacing: normal
+
+.order__checkbox
+  display: flex
+  align-items: center
+  cursor: pointer
+
+  &_input_box
+    position: relative
+
+    display: flex
+    justify-content: center
+    align-items: center
+
+    width: 28px
+    height: 28px
+    border: 1px solid #928F94
+    border-radius: 5px
+
+  &_input
+    position: absolute
+    width: 0
+    height: 0
+
+    &_checked-icon
+      display: none
+
+      .icon
+        width: 23px
+        height: 18px
+        fill: #FFA800
+
+    &:checked + .order__checkbox_input_box
+      border-color: #FFA800
+
+      .order__checkbox_input_checked-icon
+        display: block
+
+    &:checked ~ .order__checkbox_text
+      color: #FFA800
+
+.order__checkbox_text
+  display: block
+  margin-left: 20px
+  // color: #928F94
+  color: #292929
+
+  &_size_m
+    font-size: 1.5rem
+
+  &_size_s
+    font-size: 1.125rem

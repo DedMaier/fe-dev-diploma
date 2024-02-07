@@ -1,0 +1,52 @@
+@import 'variables'
+
+@mixin stretch-on-parent
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+
+@mixin section-width
+  padding-inline: $padding-inline-section
+  max-width: $max-width-section
+  margin-inline: auto
+
+  // @include to(tablet)
+  //   padding-inline: 20px
+
+@function get-prev-breakpoint($breakpoint)
+  $keys: map-keys($breakpoints)
+  $index: index(($keys), ($breakpoint))
+
+  @if ($index > 1)
+    $prev-breakpoint: nth($keys, $index - 1)
+    @return map-get($breakpoints, $prev-breakpoint)
+  @else
+    @return null
+
+@mixin media($keys...)
+  @each $key in $keys
+    $current-breakpoint: map-get($breakpoints, $key)
+    $prev-breakpoint: get-prev-breakpoint($key)
+
+    @if ($current-breakpoint)
+      @if ($prev-breakpoint)
+        @media (min-width: $prev-breakpoint + 0.02px) and (max-width: $current-breakpoint)
+          @content
+      @else 
+        @media (max-width: $current-breakpoint)
+          @content
+    @else
+      @media (min-width: $prev-breakpoint + 0.02px)
+        @content
+
+@mixin from($device-type)
+  $prev-breakpoint: get-prev-breakpoint($device-type)
+  @media (min-width: $prev-breakpoint + 0.02px)
+    @content
+
+@mixin to($device-type)
+  $breakpoint: map-get($breakpoints, $device-type)
+  @media (max-width: $breakpoint)
+    @content

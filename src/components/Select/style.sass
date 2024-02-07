@@ -1,0 +1,46 @@
+.select__container
+  position: relative
+
+.select__options
+  display: none
+  list-style: none
+
+  &.show
+    display: block
+
+  .select__options_item
+
+    &:active,
+    &:focus,
+    &:hover,
+    &[aria-selected="true"]
+      background: #FFCA62
+      color: #FFFFFF
+      cursor: pointer
+
+.select__button
+  width: 100%
+  position: relative
+  outline: none
+  text-align: left
+  color: #292929
+
+.select__options
+  display: none
+  list-style: none
+
+  &.show
+    display: block
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+
+.select__options_item
+  display: flex
+  align-items: center
+  color: #292929
+  border: 1px solid transparent
+
+  &:not(:last-child)
+    border-bottom: 1px solid #C4C4C4

@@ -1,0 +1,164 @@
+@import 'styles/variables'
+
+.tickets__item
+  display: flex
+  background: #FFFFFF
+  border: 1px solid #C4C4C4
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3)
+
+  &:not(:last-child)
+    margin-bottom: 50px
+
+  &_checking
+    border: none
+
+.ticket__main-info
+  flex: 1
+  background-color: #E4E0E9
+  padding-block: 10px
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+  &_header
+    margin-bottom: 15px
+    padding-inline: 25px 50px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.ticket__train-icon
+  display: block
+  width: 52px
+  height: 52px
+  fill: $white
+
+  &_wrapper
+    display: inline-block
+    border: 2px solid #FFFFFF
+    border-radius: 50%
+    padding: 17px
+    margin-bottom: 15px
+
+.ticket__header
+  font-weight: 700
+  color: #3E3C41
+
+.ticket__directions
+  width: 50%
+  padding: 50px 40px
+  border-right: 1px dashed #E5E5E5
+
+.direction
+  display: flex
+  gap: 40px
+
+  &:not(:last-child)
+    // margin-bottom: 65px
+    margin-bottom: 45px
+
+  &_reversed
+    flex-direction: row-reverse
+
+.ticket__places
+  width: 100%
+  max-width: 280px
+  padding: 40px 20px 20px 25px
+  display: flex
+  flex-direction: column
+  gap: 25px
+  justify-content: space-between
+
+.trip__duration
+  font-size: 18px
+  color: #C4C4C4
+  margin-bottom: 7px
+
+.trip__direction_icon
+  display: block
+  height: 20px
+  width: 30px
+  margin: 0 auto
+
+  fill: #FFA800
+
+.trip__point
+  flex: 1 0
+
+  &_time
+    margin-bottom: 3px
+
+    font-weight: 700
+    font-size: 1.5rem
+    color: #000000
+
+  &_city
+    margin-bottom: 3px
+    font-size: 1.125rem
+    color: #292929
+    text-transform: capitalize
+
+  &_station
+    font-size: 1rem
+    color: #928F94
+
+.ticket__trip-points
+  padding-inline: 25px
+  text-transform: capitalize
+
+  &_item
+    color: #292929
+
+    &_train-start
+      color: #928F94
+
+.trip__places_item
+  display: flex
+  align-items: baseline
+  font-size: 16px
+
+.ticket__places_features
+  display: flex
+  justify-content: flex-end
+  gap: 16px
+
+  padding-inline: 6px
+
+.ticket__places_feature_icon
+  width: 20px
+  height: 20px
+  display: flex
+
+  .icon
+    fill: #C4C4C4
+
+.place__type
+  flex-basis: 40%
+  color: #3E3C41
+
+.place__quantity
+  flex: 0 1 30px
+
+  margin-right: 0.25em
+
+  font-weight: 500
+  font-size: 16px
+  color: #FFA800
+
+.trip__places_item:not(:last-child)
+  margin-bottom: 25px
+
+.place__price_from
+  font-size: 16px
+  color: #928F94
+  margin-right: 0.25em
+
+.place__price_amount
+  font-weight: 700
+  font-size: 24px
+  color: #2D2B2F
+  margin-right: 0.25em
+
+.place__price_currency
+  font-size: 1.5rem
+  color: #928F94
