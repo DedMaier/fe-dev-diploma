@@ -1,1 +1,0 @@
-export { PlacesTable } from './PlacesTable';
