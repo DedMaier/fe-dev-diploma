@@ -2,7 +2,7 @@
   "name": "fe-dev-diploma",
   "version": "0.1.0",
   "main": "index.js",
-  "homepage": "https://dedmaier.github.io/fe-dev-diplom",
+  "homepage": "https://dedmaier.github.io/fe-dev-diploma",
   "private": true,
   "dependencies": {
     "@bem-react/classname": "^1.6.0",
