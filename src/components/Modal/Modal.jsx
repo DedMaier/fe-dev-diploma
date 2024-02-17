@@ -1,15 +1,11 @@
 import './style.sass';
-
 import cn from 'classnames';
 import { useRef } from 'react';
 import { createPortal } from 'react-dom';
-
 import { Button } from 'components/Button';
 import { Icon } from 'components/OrderPage/TicketDetails/TicketDetails';
-
 import { ReactComponent as InfoIcon } from 'assets/icons/info_icon.svg';
 import { ReactComponent as WarningIcon } from 'assets/icons/warning_icon.svg';
-
 import { useDisableBodyScroll } from 'hooks/useDisableBodyScroll';
 import { useOnClickOutside } from 'hooks/useOnClickOutside';
 import { useOnKeyDown } from 'hooks/useOnKeyDown';

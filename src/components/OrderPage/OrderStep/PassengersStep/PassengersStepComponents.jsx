@@ -1,14 +1,11 @@
 import './style.sass';
-
 import cn from 'classnames';
 import { useController, useFormContext } from 'react-hook-form';
-
 import { OrderBlockContainer, OrderBlockHeader } from '../../OrderBlock';
 import { Icon } from '../../TicketDetails/TicketDetails';
 import { OrderBlockHeaderTitle } from '../../OrderBlock';
 import { Select } from 'components/Select';
 import { Input } from 'components/Input';
-
 import { ReactComponent as PlusIcon } from 'assets/icons/plus_icon.svg';
 
 export const PassengerFormAdd = ({ onAddPassenger }) => {

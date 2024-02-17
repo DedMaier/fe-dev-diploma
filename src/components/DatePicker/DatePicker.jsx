@@ -1,11 +1,9 @@
 import 'react-day-picker/dist/style.css';
 import './style.sass';
-
 import { useRef } from 'react';
 import { DayPicker, useNavigation } from 'react-day-picker';
 import { format, addMonths } from 'date-fns';
 import ru from 'date-fns/locale/ru';
-
 import { useOnClickOutside } from 'hooks/useOnClickOutside';
 
 const locale = ru;

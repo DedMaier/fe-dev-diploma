@@ -1,8 +1,6 @@
 import './style.sass';
-
 import cn from 'classnames';
 import { useState } from 'react';
-
 import { ReactComponent as ShrinkBtnIcon } from 'assets/icons/shrink.svg';
 import { ReactComponent as ExpandBtnIcon } from 'assets/icons/expand.svg';
 

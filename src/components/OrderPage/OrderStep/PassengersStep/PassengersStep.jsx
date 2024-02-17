@@ -1,12 +1,9 @@
 import './style.sass';
-
 import { useState, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-
 import { PassengerForm } from './PassengerForm';
 import { PassengerFormAdd } from './PassengersStepComponents';
 import { NextStepButton, PrevStepButton } from 'components/OrderPage';
-
 import { setPassengerForms } from 'reducers/order';
 import {
   addEmptySeat,

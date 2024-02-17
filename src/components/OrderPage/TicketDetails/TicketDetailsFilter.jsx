@@ -1,8 +1,6 @@
 import './style.sass';
-
 import { useForm } from 'react-hook-form';
 import { useDispatch, useSelector } from 'react-redux';
-
 import { DateInput, Input } from '../../Input';
 import { HoursRangeSlider, RangeSlider } from './RangeSlider';
 import {
@@ -19,7 +17,6 @@ import { ReactComponent as FourthClassIcon } from 'assets/icons/fourth_class.svg
 import { ReactComponent as FirstClassIcon } from 'assets/icons/first_class.svg';
 import { ReactComponent as WiFiIcon } from 'assets/icons/wifi.svg';
 import { ReactComponent as ArrowInRectangleIcon } from 'assets/icons/arrow_in_rectangle.svg';
-
 import { updateQueryParams } from 'reducers/search';
 import { useSetValuesByQuery } from 'hooks/useSetValuesByQuery';
 

@@ -1,19 +1,16 @@
 import './style.sass';
-
 import cn from 'classnames';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { getHours, getMinutes } from 'date-fns';
 import { getPlural, pluralWords } from 'lib/helpers';
-
 import { Header } from 'components/Header';
 import { Button } from 'components/Button';
 import { PlaceSelection } from './PlaceSelection';
 import { TicketAmountForm } from './TicketAmountForm';
 import { NextStepButton } from 'components/OrderPage/OrderPage';
 import { TicketDirection, TripCities } from 'components/Ticket/Ticket';
-
 import { ReactComponent as SecondClassIcon } from 'assets/icons/second_class.svg';
 import { ReactComponent as ThirdClassIcon } from 'assets/icons/third_class.svg';
 import { ReactComponent as FourthClassIcon } from 'assets/icons/fourth_class.svg';
@@ -21,7 +18,6 @@ import { ReactComponent as FirstClassIcon } from 'assets/icons/first_class.svg';
 import { ReactComponent as ClockIcon } from 'assets/icons/clock.svg';
 import { ReactComponent as TrainIcon } from 'assets/icons/train.svg';
 import { ReactComponent as ArrowInRectangleLarge } from 'assets/icons/arrow_in_rectangle_large.svg';
-
 import { changeSelectedRailcarType, getSeatsDetailAsync } from 'reducers/seats';
 import { setDirectionId } from 'reducers/order';
 

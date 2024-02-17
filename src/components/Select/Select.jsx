@@ -1,8 +1,6 @@
 import './style.sass';
-
 import cn from 'classnames';
 import { useRef, useState } from 'react';
-
 import { useOnClickOutside } from 'hooks/useOnClickOutside';
 
 export const Select = ({ className, optionsList, selected, onSelect }) => {

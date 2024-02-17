@@ -2,7 +2,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { format } from 'date-fns';
 import { parse } from 'date-fns/esm';
-
 import { OrderBlockContainer, OrderBlockHeaderTitle } from '../OrderBlock';
 import { Icon } from '../TicketDetails/TicketDetails';
 import { Button } from 'components/Button';
@@ -14,7 +13,6 @@ import {
 } from '../OrderPage';
 
 import { ReactComponent as PersonIcon } from 'assets/icons/person.svg';
-
 import { createOrder } from 'reducers/order';
 import { setStep } from 'reducers/stepper';
 import { formatNumber } from 'lib/helpers';

@@ -2,7 +2,6 @@ import classNames from 'classnames';
 import { useState, useEffect } from 'react';
 import { useFormContext, useWatch } from 'react-hook-form';
 import Slider from 'rc-slider';
-
 import 'rc-slider/assets/index.css';
 
 const railHeights = {

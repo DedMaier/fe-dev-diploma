@@ -1,8 +1,6 @@
 import './style.sass';
-
 import { OrderBlockSectionRow } from '../OrderBlock';
 import { OrderInput } from '../OrderInput';
-
 import { errorMessages, patternValues } from './helpers';
 
 export const FullnameInputBlock = ({ errors }) => {

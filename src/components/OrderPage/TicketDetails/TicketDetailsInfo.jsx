@@ -1,9 +1,7 @@
 import './style.sass';
-
 import cn from 'classnames';
 import { useSelector } from 'react-redux';
 import { getHours, getMinutes } from 'date-fns';
-
 import { Header } from 'components/Header';
 import {
   TicketDetails,
@@ -16,7 +14,6 @@ import {
 import { ReactComponent as ArrowInRectangleIcon } from 'assets/icons/arrow_in_rectangle.svg';
 import { ReactComponent as PersonIcon } from 'assets/icons/person.svg';
 import { ReactComponent as ArrowIcon } from 'assets/icons/arrow.svg';
-
 import {
   formatNumber,
   getPlural,

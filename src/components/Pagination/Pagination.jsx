@@ -1,7 +1,5 @@
 import './style.sass';
-
 import cn from 'classnames';
-
 import { ReactComponent as ChevronIcon } from 'assets/icons/chevron.svg';
 
 const setPaginationList = (page, count) => {

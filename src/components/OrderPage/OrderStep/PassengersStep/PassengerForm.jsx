@@ -1,10 +1,8 @@
 import './style.sass';
-
 import cn from 'classnames';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useForm } from 'react-hook-form';
-
 import {
   OrderBlockContainer,
   OrderBlockHeader,
@@ -13,10 +11,12 @@ import {
   OrderBlockHeaderTitle,
   OrderBlockSectionRow,
 } from '../../OrderBlock';
+
 import {
   OrderInput,
   OrderCheckboxInput,
 } from 'components/OrderPage/OrderInput';
+
 import { Icon } from '../../TicketDetails/TicketDetails';
 import { Button } from 'components/Button';
 import {
@@ -25,13 +25,12 @@ import {
   PassengerFormIconButton,
   PassengerFormSelect,
 } from './PassengersStepComponents';
-import { Form } from 'lib/Form';
 
+import { Form } from 'lib/Form';
 import { ReactComponent as PlusIcon } from 'assets/icons/plus_icon.svg';
 import { ReactComponent as MinusIcon } from 'assets/icons/minus_icon.svg';
 import { ReactComponent as CloseIcon } from 'assets/icons/close_icon.svg';
 import { ReactComponent as CheckedIcon } from 'assets/icons/checked.svg';
-
 import { errorMessages, patternValues } from '../helpers';
 import { setPrevStep } from 'reducers/stepper';
 import {
@@ -39,6 +38,7 @@ import {
   changeSeatType,
   recalculatePrice,
 } from 'reducers/seats';
+
 import { openModal } from 'reducers/app';
 
 const adultOption = { label: 'Взрослый', value: 'adult' };

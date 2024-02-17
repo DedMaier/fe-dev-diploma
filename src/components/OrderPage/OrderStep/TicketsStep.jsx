@@ -1,15 +1,12 @@
 import './style.sass';
-
 import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useForm, useFormContext } from 'react-hook-form';
-
 import { Pagination } from 'components/Pagination';
 import { Ticket } from 'components/Ticket';
 import { Select } from 'components/Select';
 import { Input } from 'components/Input';
 import { Form } from 'lib/Form';
-
 import { updateQueryParams } from 'reducers/search';
 import { useSetValuesByQuery } from 'hooks/useSetValuesByQuery';
 

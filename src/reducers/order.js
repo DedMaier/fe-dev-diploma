@@ -30,7 +30,6 @@ export const createOrder = createAsyncThunk(
     } = getState();
     const { online_payment_type, ...user } = userData;
 
-    // с учётом отсутствия сопоставления мест с конкретными пассажирами
     let seatIndex = 0;
     const seats = passengerForms.map(
       ({
@@ -70,7 +69,6 @@ export const createOrder = createAsyncThunk(
       const response = await apiService.order.orderCreate(data);
       const json = await response.json();
       return json;
-      //  await response.json();
     } catch (e) {
       return rejectWithValue('Что-то пошло не так :(');
     }

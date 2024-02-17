@@ -1,5 +1,4 @@
 import './style.sass';
-
 import cn from 'classnames';
 import { useEffect, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
@@ -19,7 +18,6 @@ import { ChoosePlaces } from './OrderStep/ChoosePlacesStep';
 import { Button } from 'components/Button';
 import { TicketFeatures } from 'components/Ticket/Ticket';
 import { PassengersStep } from './OrderStep/PassengersStep';
-
 import { getLastDirectionsAsync } from 'reducers/search';
 import { setNextStep, setPrevStep } from 'reducers/stepper';
 import { formatNumber } from 'lib/helpers';
@@ -36,14 +34,6 @@ export const OrderPage = () => {
   useEffect(() => {
     dispatch(getLastDirectionsAsync());
   }, []);
-
-  // useEffect(() => {
-  //   const { pathname } = location;
-  //   stepperRef.current?.scrollIntoView({
-  //     behavior: 'smooth',
-  //     block: 'nearest',
-  //   });
-  // }, [step]);
 
   return (
     <>

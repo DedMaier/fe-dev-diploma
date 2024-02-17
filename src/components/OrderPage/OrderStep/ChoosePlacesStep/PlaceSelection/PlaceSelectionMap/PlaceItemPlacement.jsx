@@ -1,10 +1,8 @@
 import './style.sass';
-
 import cn from 'classnames';
 import { useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
-
 import { useOnClickOutside } from 'hooks/useOnClickOutside';
 import { setNextStep } from 'reducers/stepper';
 import {

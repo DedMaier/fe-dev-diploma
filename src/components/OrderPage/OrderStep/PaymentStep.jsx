@@ -1,9 +1,7 @@
 import './style.sass';
-
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useForm } from 'react-hook-form';
-
 import { Header } from 'components/Header';
 import {
   OrderBlockItem,
@@ -12,12 +10,12 @@ import {
   OrderBlockSection,
   OrderBlockSectionRow,
 } from '../OrderBlock';
+
 import { OrderInput } from '../OrderInput';
 import { NextStepButton, PrevStepButton } from '../OrderPage';
 import { FullnameInputBlock } from './FullnameInputBlock';
 import { OrderRadioInput } from '../OrderInput/OrderInput';
 import { Form } from 'lib/Form';
-
 import { setUserData } from 'reducers/order';
 import { errorMessages, patternValues } from './helpers';
 
@@ -59,14 +57,11 @@ export const PaymentStep = () => {
         if (userData[field]) {
           setValue(field, userData[field], {
             shouldDirty: true,
-            // shouldValidate: true,
           });
         }
       }
     }
   }, []);
-
-  // useEffect(() => {}, [payment_method]);
 
   return (
     <>

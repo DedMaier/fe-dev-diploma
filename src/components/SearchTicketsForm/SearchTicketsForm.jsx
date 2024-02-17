@@ -1,18 +1,14 @@
 import './style.sass';
-
 import cn from 'classnames';
 import { useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useForm, useFormContext } from 'react-hook-form';
 import { useHistory, useLocation } from 'react-router-dom';
-
 import { DateInput, LocationInput } from '../Input';
 import { Header } from 'components/Header';
 import { Button } from 'components/Button';
 import { Form } from 'lib/Form';
-
 import { ReactComponent as InverseBtnIcon } from 'assets/icons/inverse_button.svg';
-
 import { useOnClickOutside } from 'hooks/useOnClickOutside';
 import { useSetValuesByQuery } from 'hooks/useSetValuesByQuery';
 import { useWatchQueryParams } from 'hooks/useWatchQueryParams';

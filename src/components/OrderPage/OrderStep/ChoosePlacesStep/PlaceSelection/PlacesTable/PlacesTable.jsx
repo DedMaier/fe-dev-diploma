@@ -1,13 +1,10 @@
 import './style.sass';
-
 import cn from 'classnames';
 import { useSelector, useDispatch } from 'react-redux';
-
 import { ReactComponent as ConditionerIcon } from 'assets/icons/conditioner.svg';
 import { ReactComponent as WiFiIcon } from 'assets/icons/wifi.svg';
 import { ReactComponent as BedclothesIcon } from 'assets/icons/bedclothes.svg';
 import { ReactComponent as DrinksIcon } from 'assets/icons/drinks.svg';
-
 import { formatNumber } from 'lib/helpers';
 import { changeFeatureSelection, recalculatePrice } from 'reducers/seats';
 

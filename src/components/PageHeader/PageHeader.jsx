@@ -1,9 +1,6 @@
 import './style.sass';
-
 import { HashLink as Link } from 'react-router-hash-link';
-
 import { Logo } from 'components/Logo';
-
 import { useMenuLinks } from '../../hooks/useMenuLinks';
 
 export const PageHeader = () => {

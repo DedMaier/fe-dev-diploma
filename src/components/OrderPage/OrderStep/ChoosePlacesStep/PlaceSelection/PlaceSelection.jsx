@@ -1,11 +1,8 @@
 import './style.sass';
-
 import cn from 'classnames';
 import { useSelector, useDispatch } from 'react-redux';
-
 import { PlaceSelectionMap } from './PlaceSelectionMap';
 import { PlacesTable } from './PlacesTable';
-
 import { changeRailcarSelection } from 'reducers/seats';
 import { formatNumber, getPlural, pluralWords } from 'lib/helpers';
 

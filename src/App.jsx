@@ -1,12 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
-
 import { MainPage } from 'components/MainPage';
 import { SuccessPage } from 'components/SuccessPage';
 import { OrderPage } from 'components/OrderPage';
 import { Footer } from 'components/Footer';
 import { Modal } from 'components/Modal';
-
 import { hideModal } from 'reducers/app';
 
 export const App = () => {

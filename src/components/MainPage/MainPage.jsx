@@ -1,5 +1,4 @@
 import './style.sass';
-
 import { PageHeader } from 'components/PageHeader';
 import { SearchTicketsForm } from 'components/SearchTicketsForm';
 import { Header } from 'components/Header';

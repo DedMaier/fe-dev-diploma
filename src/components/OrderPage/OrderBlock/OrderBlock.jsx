@@ -1,5 +1,4 @@
 import './style.sass';
-
 import cn from 'classnames';
 
 export const OrderBlockItem = ({ children }) => {
